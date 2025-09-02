@@ -180,4 +180,4 @@ async def get_embedding(txid: str):
         raise HTTPException(status_code=500, detail=f"Embedding lookup failed: {str(e)}")
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=5025)
